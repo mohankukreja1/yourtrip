@@ -15,7 +15,7 @@ includeScript ('../booking/js/regula.js');
 			var $this = $(this),
 			data = $this.data('bookingForm'),
 			object = {
-				url: 'booking/booking.php', // php-script url
+				url: '/add', // php-script url
 				sender: '', // sender for header in e-mail
 				ownerEmail:'support@template-help.com', // destination e-mail, message will be send on this e-mail
 				validate:true, // validate or not
