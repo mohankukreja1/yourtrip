@@ -52,8 +52,26 @@ const addtodb=db.define('addtodb',{
 
 
 })
+
+const contact=db.define('contact',{
+    id:{
+        type:datatypes.INTEGER,
+        primaryKey:true,
+        autoIncrement:true,
+
+    },
+    message:{
+        type:datatypes.STRING
+    },
+    name:{
+        type:datatypes.STRING
+    },
+    email:{
+        type:datatypes.STRING
+    }
+})
 db.sync({force:true})
 
 exports=module.exports={
-    addtodb
+    addtodb,contact
 }

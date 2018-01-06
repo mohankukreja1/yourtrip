@@ -1,10 +1,16 @@
 const route=require('express').Router()
-const addtodb=require('../db/models').addtodb
+const contact=require('../db/models').contact
 
 
 
 route.post('/',(req,res)=>{
-    console.log(req);
+    contact.create({
+        name:req.body.name,
+        email:req.body.email,
+        message:req.body.message
+    }).catch((err)=>{
+        console.log(err);
+    })
 })
 
 
