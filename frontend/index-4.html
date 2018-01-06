@@ -89,7 +89,7 @@
 				</div>
 				<div class="grid_6 prefix_1">
 					<h3>GET IN TOUCH</h3>
-					<form id="form">
+					<form id="form" action="/contact" method="post">
 						<div class="success_wrapper">
 							<div class="success-message">Contact form submitted</div>
 						</div>
@@ -104,7 +104,7 @@
 							<span class="error-message">*This is not a valid email.</span>
 						</label>
 						<label class="country">
-							<input type="text" placeholder="Country:" data-constraints="@Required @JustLetters"/>
+							<input type="text" placeholder="Country:" name="country" data-constraints="@Required @JustLetters"/>
 							<span class="empty-message">*This field is required.</span>
 							<span class="error-message">*This is not a valid phone.</span>
 						</label>
